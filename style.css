@@ -1,0 +1,227 @@
+ /* header start */
+ *{
+   padding: 0;
+   margin: 0;
+ }
+ body{
+   background-size: cover;
+ }
+ header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+    /* header end */
+    /* index page start */
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') white no-repeat center center scroll;
+    }
+  
+    header video {
+      display: none;
+    }
+  }
+  .carousel-item{
+    height: 700px;
+    width: auto;
+    margin:auto;
+    
+  }
+  .row{
+    text-align: justify;
+  }
+  /* index page end */
+  /* login page start */
+  .login-form {
+    width: 340px;
+    margin: 50px auto;
+  	font-size: 15px;
+    opacity: 0.90;
+}
+.login-form form {
+    margin-bottom: 15px;
+    background: #f2f3f7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    
+}
+.login-form h2 {
+    margin: 0 0 15px;
+    color: #636363;
+}
+.form-control, .btn {
+    min-height: 38px;
+    border-radius: 2px;
+}
+.btn {        
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* login page end */
+/* signup page start */
+.form-control {
+	height: 40px;
+	box-shadow: none;
+	color: #969fa4;
+}
+.form-control:focus {
+	border-color: #5cb85c;
+}
+.form-control, .btn {        
+	border-radius: 3px;
+}
+.signup-form {
+	width: 450px;
+	margin: 0 auto;
+	padding: 30px 0;
+  	font-size: 15px;
+    opacity: 0.90;
+}
+.signup-form h2 {
+	color: #636363;
+	margin: 0 0 15px;
+	position: relative;
+	text-align: center;
+}
+.signup-form h2:before, .signup-form h2:after {
+	content: "";
+	height: 2px;
+	width: 30%;
+	background: #d4d4d4;
+	position: absolute;
+	top: 50%;
+	z-index: 2;
+}	
+.signup-form h2:before {
+	left: 0;
+}
+.signup-form h2:after {
+	right: 0;
+}
+.signup-form .hint-text {
+	color: #999;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.signup-form form {
+	color: #999;
+	border-radius: 3px;
+	margin-bottom: 15px;
+	background: #f2f3f7;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	padding: 30px;
+  
+}
+.signup-form .form-group {
+	margin-bottom: 20px;
+}
+.signup-form input[type="checkbox"] {
+	margin-top: 3px;
+}
+.signup-form .btn {        
+	font-size: 16px;
+	font-weight: bold;		
+	min-width: 140px;
+	outline: none !important;
+}
+.signup-form .row div:first-child {
+	padding-right: 10px;
+}
+.signup-form .row div:last-child {
+	padding-left: 10px;
+}    	
+.signup-form a {
+	color: rgb(180, 18, 32);
+	text-decoration: underline;
+  
+}
+.signup-form a:hover {
+	text-decoration: none;
+}
+.signup-form form a {
+	color: #5cb85c;
+	text-decoration: none;
+}	
+.signup-form form a:hover {
+	text-decoration: underline;
+} 
+/* signup form end */
+/* district gallary start */
+img{ 
+  max-width:100%;
+}
+.gallery_box li{ width:14.2%;  max-width: 100% ; display:inline-block; float: left; text-align: center; overflow: hidden;    position: relative;}
+.gallery_box{ padding:0;display: flow-root;}
+
+.gallery_box li:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.gallery_box li img{-webkit-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+    transition: transform 0.5s ease;}
+.gallery_box li {
+    height: 100px;
+}
+
+.gallery_box .box_data{ 
+    position:absolute; top: 0; left: 0; right:0; bottom:0; color:rgb(245, 249, 250);
+}
+.gallery_box .box_data span{ 
+    position:absolute; top: 50%; transform: translateY(-50%); left:0 ; right:0; font-size:24px;
+}
+.gallery_box li:hover .box_data{
+     background:rgba(255,0,39,0.55)
+    }
+/* district gallery end */
+.contact{
+  margin-left: 30px;
+ 
+}
+.contact li{
+  list-style: none;
+}
+.icon li{
+  display: inline;
+  font-size: 30px;
+  margin: 6px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to Kerala Tourism </title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+<body background="image/kerala3.jpg">
+  <!-- header start -->
+  <nav id="navbar-site" class="navbar bg-secondary bg-gradient navbar-dark navbar-expand-sm">
+    <div class="navbar-nav ml-sm-auto">
+          <a class="navbar-brand d-none d-sm-inline-block" href="index.html" target="_blank"><img src="image/kerala-tourism-title.png" style="width :100px" alt="kerala tourism logo"></a>
+          <a class="nav-item nav-link" href="index.html" target="_blank">Home</a>
+          <a class="nav-item nav-link" href="index.html#explore" target="_blank">Explore</a>
+          <a class="nav-item nav-link active" href="#" >Login</a>
+          <a class="nav-item nav-link" href="signup.html" target="_blank">Signup</a>
+          <a class="nav-item nav-link" href="contact.html" target="_blank">Contact Us</a>
+        
+      </div>
+    </nav>
+      <!-- header end -->
+      <!-- loginform start -->
+      <div class="login-form">
+        <form action="/examples/actions/confirmation.php" method="post">
+            <h2 class="text-center">Log in</h2>       
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Username" required="required">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password" required="required">
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-success btn-lg btn-block">Log in</button>
+            </div>
+            <div class="clearfix">
+                <label class="float-left form-check-label"><input type="checkbox"> Remember me</label>
+                <a href="#" class="float-right">Forgot Password?</a>
+            </div>        
+        </form>
+        <p class="text-center"><a href="signup.html" target="_blank">Create an Account</a></p>
+    </div>
+    <!-- loginform end -->
+
+</body>
+</html>
